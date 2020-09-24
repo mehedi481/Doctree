@@ -1,8 +1,9 @@
-import 'package:Doctree/screens/login.dart';
-import 'package:Doctree/screens/onBoard_Screens/onBoard_Two.dart';
+import 'package:Doctree/screens/onBoard_Screens/onBoard_Three.dart';
 import 'package:flutter/material.dart';
 
-class OnBoard extends StatelessWidget {
+import '../login.dart';
+
+class OnBoardTwo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +12,7 @@ class OnBoard extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "assets/image/OB1.png",
+            "assets/image/OB2.png",
             fit: BoxFit.cover,
           ),
           Column(
@@ -30,7 +31,7 @@ class OnBoard extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            "Thousands of Doctors",
+                            "Live talk with doctors",
                             style: TextStyle(
                               color: Colors.black87,
                               fontWeight: FontWeight.w600,
@@ -41,7 +42,7 @@ class OnBoard extends StatelessWidget {
                             height: 8,
                           ),
                           Text(
-                            "Access thousands of Doctors instantly.You can easily contact with the doctors and contact for your needs.",
+                            "Easily connect with doctors and start video chart for your better treatment & Prescription.",
                             style: TextStyle(color: Colors.black87),
                             textAlign: TextAlign.center,
                           ),
@@ -54,7 +55,7 @@ class OnBoard extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.all(5.0),
                                 child: Image.asset(
-                                  "assets/icon/logo icon monocolor.png",
+                                  "assets/icon/logo icon fade.png",
                                   height: 10,
                                   width: 10,
                                 ),
@@ -62,7 +63,7 @@ class OnBoard extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.all(5.0),
                                 child: Image.asset(
-                                  "assets/icon/logo icon fade.png",
+                                  "assets/icon/logo icon monocolor.png",
                                   height: 10,
                                   width: 10,
                                 ),
@@ -92,7 +93,7 @@ class OnBoard extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => OnBoardTwo(),
+                                      builder: (context) => OnBoardThree(),
                                     ),
                                   );
                                 },

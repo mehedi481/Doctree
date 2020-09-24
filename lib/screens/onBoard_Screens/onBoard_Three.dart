@@ -1,8 +1,7 @@
 import 'package:Doctree/screens/login.dart';
-import 'package:Doctree/screens/onBoard_Screens/onBoard_Two.dart';
 import 'package:flutter/material.dart';
 
-class OnBoard extends StatelessWidget {
+class OnBoardThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +10,7 @@ class OnBoard extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "assets/image/OB1.png",
+            "assets/image/OB3.png",
             fit: BoxFit.cover,
           ),
           Column(
@@ -30,7 +29,7 @@ class OnBoard extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            "Thousands of Doctors",
+                            "Get appointment",
                             style: TextStyle(
                               color: Colors.black87,
                               fontWeight: FontWeight.w600,
@@ -41,7 +40,7 @@ class OnBoard extends StatelessWidget {
                             height: 8,
                           ),
                           Text(
-                            "Access thousands of Doctors instantly.You can easily contact with the doctors and contact for your needs.",
+                            "Book an appointment with doctor, Chat with doctor via appointment letter Get consultant.",
                             style: TextStyle(color: Colors.black87),
                             textAlign: TextAlign.center,
                           ),
@@ -54,23 +53,23 @@ class OnBoard extends StatelessWidget {
                               Padding(
                                 padding: EdgeInsets.all(5.0),
                                 child: Image.asset(
+                                  "assets/icon/logo icon fade.png",
+                                  height: 10,
+                                  width: 10,
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(5.0),
+                                child: Image.asset(
+                                  "assets/icon/logo icon fade.png",
+                                  height: 10,
+                                  width: 10,
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(5.0),
+                                child: Image.asset(
                                   "assets/icon/logo icon monocolor.png",
-                                  height: 10,
-                                  width: 10,
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.all(5.0),
-                                child: Image.asset(
-                                  "assets/icon/logo icon fade.png",
-                                  height: 10,
-                                  width: 10,
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.all(5.0),
-                                child: Image.asset(
-                                  "assets/icon/logo icon fade.png",
                                   height: 10,
                                   width: 10,
                                 ),
@@ -92,7 +91,7 @@ class OnBoard extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (context) => OnBoardTwo(),
+                                      builder: (context) => Login(),
                                     ),
                                   );
                                 },
@@ -103,7 +102,7 @@ class OnBoard extends StatelessWidget {
                                 ),
                                 child: Center(
                                   child: Text(
-                                    "Next",
+                                    "Get Started",
                                     style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 14,
@@ -113,24 +112,6 @@ class OnBoard extends StatelessWidget {
                                 ),
                               ),
                             ),
-                          ),
-                          InkWell(
-                            child: Text(
-                              "Skip for now",
-                              style: TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                            //TODO: Navigate to HomePage
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => Login(),
-                                ),
-                              );
-                            },
                           ),
                         ],
                       ),
