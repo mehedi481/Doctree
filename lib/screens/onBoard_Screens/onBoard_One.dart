@@ -124,7 +124,7 @@ class OnBoard extends StatelessWidget {
                             ),
                             //TODO: Navigate to HomePage
                             onTap: () {
-                              Navigator.push(
+                              Navigator.pushReplacement(
                                 context,
                                 MaterialPageRoute(
                                   builder: (context) => Login(),
