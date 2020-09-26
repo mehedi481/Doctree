@@ -31,9 +31,9 @@ class OnBoardThree extends StatelessWidget {
                           Text(
                             "Get appointment",
                             style: TextStyle(
-                              color: Colors.black87,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 16,
+                              color: Color(0xff707070),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
                             ),
                           ),
                           SizedBox(
@@ -41,7 +41,10 @@ class OnBoardThree extends StatelessWidget {
                           ),
                           Text(
                             "Book an appointment with doctor, Chat with doctor via appointment letter Get consultant.",
-                            style: TextStyle(color: Colors.black87),
+                            style: TextStyle(
+                              color: Color(0xff707070),
+                              fontSize: 14,
+                            ),
                             textAlign: TextAlign.center,
                           ),
                           SizedBox(
@@ -105,8 +108,8 @@ class OnBoardThree extends StatelessWidget {
                                     "Get Started",
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal,
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w500,
                                     ),
                                   ),
                                 ),

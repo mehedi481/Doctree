@@ -33,9 +33,9 @@ class OnBoardTwo extends StatelessWidget {
                           Text(
                             "Live talk with doctors",
                             style: TextStyle(
-                              color: Colors.black87,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 16,
+                              color: Color(0xff707070),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
                             ),
                           ),
                           SizedBox(
@@ -43,7 +43,10 @@ class OnBoardTwo extends StatelessWidget {
                           ),
                           Text(
                             "Easily connect with doctors and start video chart for your better treatment & Prescription.",
-                            style: TextStyle(color: Colors.black87),
+                            style: TextStyle(
+                              color: Color(0xff707070),
+                              fontSize: 14,
+                            ),
                             textAlign: TextAlign.center,
                           ),
                           SizedBox(
@@ -107,8 +110,8 @@ class OnBoardTwo extends StatelessWidget {
                                     "Next",
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal,
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w500,
                                     ),
                                   ),
                                 ),

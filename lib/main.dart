@@ -11,6 +11,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Doctree",
+      theme: ThemeData(
+        //TODO: Add font family "Khula" . This font isn't provide by source.
+      ),
       home: SplashScreen(),
     );
   }

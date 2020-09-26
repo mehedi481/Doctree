@@ -32,9 +32,9 @@ class OnBoard extends StatelessWidget {
                           Text(
                             "Thousands of Doctors",
                             style: TextStyle(
-                              color: Colors.black87,
-                              fontWeight: FontWeight.w600,
-                              fontSize: 16,
+                              color: Color(0xff707070),
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20,
                             ),
                           ),
                           SizedBox(
@@ -42,7 +42,10 @@ class OnBoard extends StatelessWidget {
                           ),
                           Text(
                             "Access thousands of Doctors instantly.You can easily contact with the doctors and contact for your needs.",
-                            style: TextStyle(color: Colors.black87),
+                            style: TextStyle(
+                              color: Color(0xff707070),
+                              fontSize: 14,
+                            ),
                             textAlign: TextAlign.center,
                           ),
                           SizedBox(
@@ -106,8 +109,8 @@ class OnBoard extends StatelessWidget {
                                     "Next",
                                     style: TextStyle(
                                       color: Colors.white,
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.normal,
+                                      fontSize: 13,
+                                      fontWeight: FontWeight.w500,
                                     ),
                                   ),
                                 ),
