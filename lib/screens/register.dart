@@ -1,3 +1,4 @@
+import 'package:Doctree/screens/profile_setup.dart';
 import 'package:Doctree/screens/sign_in.dart';
 import 'package:flutter/material.dart';
 
@@ -110,6 +111,7 @@ class Register extends StatelessWidget {
                       ],
                     ),
                     TextField(
+                      keyboardType: TextInputType.number,
                       decoration: InputDecoration(
                         hintText: "Enter your phone number",
                       ),
@@ -158,9 +160,16 @@ class Register extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: FlatButton(
-                  onPressed: () {}, // Button Clicked Function
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ProfileSetUp(),
+                      ),
+                    );
+                  }, // Button Clicked Function
                   child: Text(
-                    "Sign In",
+                    "Sign Up",
                     style: TextStyle(
                       fontSize: 13,
                       color: Color(0xffFFFFFF),
@@ -185,7 +194,7 @@ class Register extends StatelessWidget {
                   ),
                   InkWell(
                     child: Text(
-                      " Sign in",
+                      " Sign In",
                       style: TextStyle(
                         fontSize: 12,
                         color: Color(0xff387AF6),
