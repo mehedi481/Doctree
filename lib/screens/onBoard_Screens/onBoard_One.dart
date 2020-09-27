@@ -99,7 +99,7 @@ class OnBoard extends StatelessWidget {
                                     ),
                                   );
                                 },
-                                color: Colors.blue,
+                                color: Color(0xff387AF6),
                                 elevation: 0.0,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(8.0),
