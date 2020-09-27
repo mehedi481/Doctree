@@ -1,10 +1,10 @@
+import 'package:Doctree/screens/sign_in.dart';
 import 'package:flutter/material.dart';
 
-class SignInPage extends StatelessWidget {
+class Register extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF6F6F6),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.only(left: 20, right: 20),
@@ -44,6 +44,74 @@ class SignInPage extends StatelessWidget {
                     TextField(
                       decoration: InputDecoration(
                         hintText: "example@gmail.com",
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Container(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/icon/user 2.png",
+                          height: 15,
+                          width: 16,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          "Name",
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Color(0xff727272),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                    TextField(
+                      decoration: InputDecoration(
+                        hintText: "Enter your name",
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 40,
+              ),
+              Container(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Image.asset(
+                          "assets/icon/phone 2.png",
+                          height: 16,
+                          width: 16,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          "Phone",
+                          style: TextStyle(
+                            fontSize: 13,
+                            color: Color(0xff727272),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                    TextField(
+                      decoration: InputDecoration(
+                        hintText: "Enter your phone number",
                       ),
                     ),
                   ],
@@ -105,25 +173,38 @@ class SignInPage extends StatelessWidget {
                   ),
                 ),
               ),
-              Center(
-                child: InkWell(
-                  child: Text(
-                    "Forget Password ?",
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Already have an account ? ",
                     style: TextStyle(
                       fontSize: 12,
                       color: Color(0xff707070),
-                      fontWeight: FontWeight.normal,
                     ),
                   ),
-                  onTap: () {
-                    //TODO: Forget password function
-                  },
-                ),
+                  InkWell(
+                    child: Text(
+                      " Sign in",
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Color(0xff387AF6),
+                      ),
+                    ),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignInPage(),
+                        ),
+                      );
+                    },
+                  ),
+                ],
               ),
               SizedBox(
                 height: 10,
               ),
-              // TODO: add here a divider after the text.
               Row(
                 children: [
                   Text(
@@ -181,33 +262,6 @@ class SignInPage extends StatelessWidget {
                     ),
                     tooltip: "Instagram Link",
                     onPressed: () {},
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Haven't any ? ",
-                    style: TextStyle(
-                      fontSize: 12,
-                      color: Color(0xff707070),
-                    ),
-                  ),
-                  InkWell(
-                    child: Text(
-                      " Create an account",
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Color(0xff387AF6),
-                      ),
-                    ),
-                    onTap: () {
-                      //TODO: Navigate to Create an account
-                    },
                   ),
                 ],
               ),

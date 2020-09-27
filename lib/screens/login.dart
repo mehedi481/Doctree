@@ -1,3 +1,4 @@
+import 'package:Doctree/screens/register.dart';
 import 'package:Doctree/screens/sign_in.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +36,14 @@ class Login extends StatelessWidget {
               child: SizedBox(
                 width: double.infinity,
                 child: FlatButton(
-                  onPressed: () {}, //TODO: Navigate to Create account page
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Register(),
+                      ),
+                    );
+                  },
                   child: Text(
                     "Create an Account",
                     style: TextStyle(
