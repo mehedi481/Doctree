@@ -79,7 +79,7 @@ class SignInPage extends StatelessWidget {
                     TextField(
                       obscureText: true,
                       decoration: InputDecoration(
-                        hintText: "enter your password",
+                        hintText: "Enter your password",
                       ),
                     ),
                   ],
