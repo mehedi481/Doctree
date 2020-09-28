@@ -65,7 +65,7 @@ class ProfileSetUp extends StatelessWidget {
                               width: 30,
                             ),
                             tooltip: "Camera",
-                            onPressed: (){}
+                            onPressed: (){},
                           ),
                         ),
                       ),
@@ -74,6 +74,7 @@ class ProfileSetUp extends StatelessWidget {
                 ),
               ),
             ),
+            
           ],
         ),
       ),

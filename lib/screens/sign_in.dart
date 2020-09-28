@@ -1,3 +1,4 @@
+import 'package:Doctree/screens/register.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatelessWidget {
@@ -206,7 +207,12 @@ class SignInPage extends StatelessWidget {
                       ),
                     ),
                     onTap: () {
-                      //TODO: Navigate to Create an account
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Register(),
+                        ),
+                      );
                     },
                   ),
                 ],
