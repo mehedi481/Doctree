@@ -26,46 +26,52 @@ class ProfileSetUp extends StatelessWidget {
               ),
             ),
             Center(
-              child: Stack(
-                alignment: Alignment.bottomCenter,
-                children: [
-                  SizedBox(
-                    height: 112,
-                    width: 118,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8.0),
-                        color: Color(0xffDBDBDB),
+              child: Container(
+                height: 170,
+                width: 118,
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                        height: 112,
+                        width: 116,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8.0),
+                          color: Color(0xffDBDBDB),
+                        ),
+                        child: Center(
+                          child: Image.asset(
+                            "assets/icon/user 3.png",
+                            height: 90,
+                            width: 80,
+                          ),
+                        ),
                       ),
-                      child: Center(
-                        child: Image.asset(
-                          "assets/icon/user 3.png",
-                          height: 90,
-                          width: 80,
+                      
+                    Padding(
+                      padding: const EdgeInsets.only(top:100.0),
+                      child: SizedBox(
+                        height: 43,
+                        width: 43,
+                        child: Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            color: Color(0xff387AF6),
+                          ),
+                          child: IconButton(
+                            icon: Image.asset(
+                              "assets/icon/camera.png",
+                              height: 30,
+                              width: 30,
+                            ),
+                            tooltip: "Camera",
+                            onPressed: (){}
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 43,
-                    width: 43,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(100),
-                        color: Color(0xff387AF6),
-                      ),
-                      child: IconButton(
-                        icon: Image.asset(
-                          "assets/icon/camera.png",
-                          height: 30,
-                          width: 30,
-                        ),
-                        tooltip: "Camera",
-                        onPressed: (){}
-                      ),
-                    ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ],
